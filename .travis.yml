@@ -17,6 +17,7 @@ install:
  - npm install
 
 script:
+ - npm version
  - npm run tests
 
 before_deploy:
@@ -29,3 +30,4 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+	tags: true
