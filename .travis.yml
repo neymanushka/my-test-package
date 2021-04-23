@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+  - "stable"
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
+
+cache:
+  directories:
+  - node_modules
+
+install:
+ - npm install
+
+script:
+ - npm run tests
+
+before_deploy:
+ - npm run build
+
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
+  on:
+    branch: master
