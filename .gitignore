@@ -1,0 +1,6 @@
+__tests__
+node_modules
+*.log
+dist
+coverage
+yarn.lock

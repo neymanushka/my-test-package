@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"strict": true,
+        "module": "esNext",
+        "declaration": true,
+        "sourceMap": false,
+		"target": "es5",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"allowSyntheticDefaultImports": true
+	},
+    "outDir": "dist",
+	"exclude": ["node_modules","__tests__"]
+}
