@@ -30,7 +30,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm version patch --no-git-tag-version 
+      - run: npm version minor --force -m "Version %s"
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
