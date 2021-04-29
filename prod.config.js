@@ -1,15 +1,17 @@
+import { terser } from 'rollup-plugin-terser'; 
 import resolve from '@rollup/plugin-node-resolve'; 
 import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
 
+const name = 'super-test';
+
 export default {
   input: 'src/index.ts',
-  output: {
-    file: 'dist/index.js',
-	sourcemap: true,
-    format: 'umd',
-	name: 'super-test'
-  },
+  output: [
+    { file: 'dist/index.esm.js', format: "esm" },
+    { file: 'dist/index.min.esm.js', format: "esm", plugins: [terser()] },
+    { file: 'dist/index.cjs.js', format: "cjs", name, sourcemap: true }
+  ],
   plugins: [
 	typescript({lib: ["es5", "es6", "dom"], target: "es2020",declaration: true }),
 	commonjs({extensions: ['.js','ts']}),
