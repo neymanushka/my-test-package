@@ -17,7 +17,7 @@
     "tslib": "^2.3.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "@neymanushka:https://npm.pkg.github.com"
   },
   "repository": {
     "url": "git://github.com/neymanushka/my-test-package.git"
