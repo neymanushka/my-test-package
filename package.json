@@ -1,5 +1,5 @@
 {
-  "name": "my-super-test-package",
+  "name": "@neymanushka/my-test-package",
   "version": "1.1.16",
   "description": "test pkg",
   "main": "dist/index.js",
@@ -15,6 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository":{
+	"url": "git://github.com/neymanushka/my-test-package.git"
   },
   "devDependencies": {
     "typescript": "^4.2.4"
