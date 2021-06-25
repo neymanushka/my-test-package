@@ -1,6 +1,6 @@
 {
   "name": "@neymanushka/my-test-package",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "description": "test pkg",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,10 +17,10 @@
     "tslib": "^2.3.0"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
-  "repository":{
-	"url": "git://github.com/neymanushka/my-test-package.git"
+  "repository": {
+    "url": "git://github.com/neymanushka/my-test-package.git"
   },
   "devDependencies": {
     "typescript": "^4.2.4"
